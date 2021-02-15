@@ -14,7 +14,7 @@ class PostsController < ApplicationController
         @post.sub_id = 1
         @post.author_id = current_user.id
         if @post.save
-            redirect_to posts_url
+            redirect_to post_url(@post)
         else
             flash.now[:errors] = @post.errors.full_messages
             render :new
