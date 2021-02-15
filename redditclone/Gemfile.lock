@@ -53,6 +53,8 @@ GEM
       erubi (>= 1.0.0)
       rack (>= 0.9.0)
     bindex (0.8.1)
+    binding_of_caller (1.0.0)
+      debug_inspector (>= 0.0.1)
     bootsnap (1.7.2)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -79,6 +81,7 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.8)
     crass (1.0.6)
+    debug_inspector (1.0.0)
     erubi (1.10.0)
     execjs (2.7.0)
     ffi (1.14.2)
@@ -106,7 +109,7 @@ GEM
     minitest (5.14.3)
     msgpack (1.4.2)
     nio4r (2.5.5)
-    nokogiri (1.11.1-x86_64-linux)
+    nokogiri (1.11.1-x86_64-darwin)
       racc (~> 1.4)
     pg (1.2.3)
     pry (0.14.0)
@@ -198,11 +201,12 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
-  x86_64-linux
+  ruby
 
 DEPENDENCIES
   bcrypt
   better_errors
+  binding_of_caller
   bootsnap (>= 1.1.0)
   byebug
   capybara (>= 2.15)
@@ -227,4 +231,4 @@ RUBY VERSION
    ruby 2.5.1p57
 
 BUNDLED WITH
-   2.2.10
+   2.1.4
