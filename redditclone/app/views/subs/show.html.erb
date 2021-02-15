@@ -2,4 +2,8 @@
 <h3><%= @sub.description %></h3>
 <h4>Author is: <%= @sub.moderator.username %></h4>
 
-<a href="<%= edit_sub_url(@sub) %>">Edit this sub</a>
+<% if current_user.id == @sub.moderator_id %>
+    <a href="<%= edit_sub_url(@sub) %>">Edit this sub</a>
+<% end %>
+
+<a href = "<%= new_post_url %>">New Post</a>
