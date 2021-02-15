@@ -23,6 +23,9 @@
             value="<%= form_authenticity_token %>">
             <button type="submit">Log Out</button>
         </form>
+        <a href="<%= new_sub_url %>">Create a new sub!</a>
+
+
     <% else %>
       <a href="<%= new_user_url %>">Create User</a>
       <a href="<%= new_session_url %>">Log In</a>

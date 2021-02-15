@@ -16,6 +16,7 @@ class SubsController < ApplicationController
 
     def create
         @sub = Sub.create(sub_params)
+        @sub.moderator_id = current_user.id
         if @sub.save
             redirect_to subs_url
         else
